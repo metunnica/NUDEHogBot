@@ -30,4 +30,11 @@ var Twitter = new twit (config);
             }
         });
     }
-retweet();
+    //loop
+    setInterval(function() {
+	
+        retweet();
+        console.log('loop restarted')
+    
+       }, 5000);
+  
