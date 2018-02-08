@@ -1,0 +1,27 @@
+{
+  "name": "nudehogbot",
+  "version": "1.0.0",
+  "description": "Nodejs Hog Bot",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1\"\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\"\u001b[2~echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metunnica/NUDEHogBot.git"
+  },
+  "keywords": [
+    "Hog",
+    "Bot",
+    "Nude"
+  ],
+  "author": "Metunnica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/metunnica/NUDEHogBot/issues"
+  },
+  "homepage": "https://github.com/metunnica/NUDEHogBot#readme",
+  "dependencies": {
+    "twitter": "^1.7.1"
+  }
+}
