@@ -30,10 +30,11 @@ var Twitter = new twit (config);
             }
         });
     }
-retweet();
     //loop
-setInterval(function() {
-    // perform actions every 5 seconds until the timeout is broken
-   }, 5000);
-   
+    setInterval(function() {
+	
+        retweet();
+        console.log('loop restarted')
+    
+       }, 5000);
   
