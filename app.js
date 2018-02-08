@@ -1,7 +1,9 @@
 // app.js
-var Twitter = require('twitter');
-var config = require('./config.js');
-var T = new Twitter(config);
+var 
+    twit = require('twit');
+    config = require('./config');
+
+var Twitter = new Twitter(config);
 
 //Retweet #Hogibs
     var retweet = function(){
@@ -9,10 +11,10 @@ var T = new Twitter(config);
             q: '#Hogib, #hogib',
             result_type: 'recent'
         }
-        T.get('search/tweets', params, function(err,data){
-            if(!err){
+        Twitter.get('search/tweets', params, function(err, data) {
+            if (!err) {
                 var retweetId = data.statuses[0].id_str;
-                Twitter.post('statuses/retweet/:id', {
+                Twitter.post ('statuses/retweet/:id', {
                     id: retweetId
                 }, function(err, responce) {
                     if (responce) {
