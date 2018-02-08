@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/metunnica/NUDEHogBot#readme",
   "dependencies": {
-    "twit": "^2.2.9",
-    "twitter": "^1.7.1"
+    "twit": "^2.2.9"
   }
 }
