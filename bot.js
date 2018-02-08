@@ -31,3 +31,9 @@ var Twitter = new twit (config);
         });
     }
 retweet();
+    //loop
+setInterval(function() {
+    // perform actions every 5 seconds until the timeout is broken
+   }, 5000);
+   
+  
