@@ -1,9 +1,9 @@
-// app.js
+// bot.js
 var 
     twit = require('twit');
     config = require('./config');
 
-var Twitter = new Twitter(config);
+var Twitter = new twit (config);
 
 //Retweet #Hogibs
     var retweet = function(){
