@@ -1,14 +1,17 @@
-// bot.js
-var 
-    twit = require('twit');
-    config = require({
-        consumer_key: process.env.CONSUMER_KEY,
-        consumer_secret: process.env.CONSUMER_SECRET,
-        access_token: process.env.ACCESS_TOKEN,
-        access_token_secret: process.env.ACCESS_TOKEN_SECRET
-        });
+import { TwitterBot } from 'node-twitterbot';
 
-var Twitter = new twit (config);
+// bot.js
+var twit = require('twit');
+var twitterBot = require('node-twitterbot').twitterBot;
+
+var Bot = new twitterBot ({
+    consumer_key: process.env.BOT_CONSUMER_KEY,
+    consumer_secret: process.env.BOT_CONSUMER_SECRET,
+    access_token: process.env.BOT_ACCESS_TOKEN,
+    access_token_secret: process.env.BOT_ACCESS_TOKEN_SECRET
+})
+
+var Twitter = new twit (Bot);
 
 //Retweet #Hogibs
     var retweet = function(){
