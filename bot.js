@@ -1,5 +1,3 @@
-import { TwitterBot } from 'node-twitterbot';
-
 // bot.js
 var twit = require('twit');
 var twitterBot = require('node-twitterbot').twitterBot;
