@@ -1,29 +1,12 @@
-import { TwitterBot } from 'node-twitterbot';
-
 // bot.js
 var 
     twit = require('twit');
-    TwitterBot = require('node-twitterbot').TwitterBot;
-
-var config = new TwitterBot ({
-consumer_key: process.env.BOT_CONSUMER_KEY,
-consumer_secret: process.env.BOT_CONSUMER_SECRET,
-access_token: process.env.BOT_ACCESS_TOKEN,
-access_token_secret: process.env.BOT_ACCESS_TOKEN_SECRET
-});
-
-//replys
-
-var phraseArray = [ "Hello Nudie",
-                    "Sup Dog",
-                    "Is the meat in your salad fresh?",
-                    "Dooooooooood Glitch!"];
-
-function chooseRandom(myArray) {
-  return myArray[Math.floor(Math.random() * myArray.length)];
-}
-var phrase = chooseRandom(phraseArray) + ", " + chooseRandom(phraseArray);
-config.tweet(phrase);
+    config = require({
+        consumer_key: process.env.BOT_CONSUMER_KEY,
+        consumer_secret: process.env.BOT_CONSUMER_SECRET,
+        access_token: process.env.BOT_ACCESS_TOKEN,
+        access_token_secret: process.env.BOT_ACCESS_TOKEN_SECRET
+        });
 
 var Twitter = new twit (config);
 
