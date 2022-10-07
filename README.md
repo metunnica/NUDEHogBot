@@ -1,2 +1,2 @@
 # NUDEHogBot
-Fan MND Charity event for the Nude Clan Podcast
+Fan MND Charity event for the Nude Clan Podcast...
